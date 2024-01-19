@@ -1,0 +1,17 @@
+by-year:
+  2012:
+    - GIT
+    - Linux
+
+  2017:
+    - Python
+    - Pandas
+
+
+  2019:
+    - scikit-learn
+    - pytorch
+
+manual:
+  FastAPI: 2
+  Flask: 2

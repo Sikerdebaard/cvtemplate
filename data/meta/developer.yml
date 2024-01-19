@@ -1,0 +1,14 @@
+by-year:
+  2012:
+    - GIT
+    - Linux
+    - HTML / CSS
+    - Javascript
+
+  2017:
+    - Python
+    - Django
+
+manual:
+  FastAPI: 2
+  Flask: 2

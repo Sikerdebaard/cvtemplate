@@ -1,0 +1,14 @@
+by-year:
+  2012:
+    - GIT
+    - Linux
+
+  2017:
+    - Python
+    - Jupyter
+    - Pandas
+
+
+  2019:
+    - scikit-learn
+    - pytorch
