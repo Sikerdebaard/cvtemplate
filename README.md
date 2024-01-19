@@ -1,5 +1,7 @@
 # Modern cv template
 
+![Alt text](cv.png?raw=true "Example screenshot")
+
 ## Using the template
 A minimal set of instructions to get the template working.
 
