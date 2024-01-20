@@ -4,8 +4,12 @@ from pathlib import Path
 from yaml.loader import SafeLoader
 from metaskills import metaskills
 
-def gen_pos_vars(position):
-    return f'\\newcommand\\jobpos{{{position}}}\n'
+def gen_pos_vars(position, title):
+    postex = f'\\newcommand\\jobpos{{{position}}}\n'
+    postex += f'\\newcommand\\jobtitle{{{title}}}\n'
+
+    return postex
+
 
 def load_yaml(file):
     with open(file, 'r') as f:
@@ -41,7 +45,7 @@ for profile in profiles.keys():
     # position vars
     fout = Path('generated/vars/') / f'{Path(fin).stem}.tex'
     fout.parent.mkdir(exist_ok=True, parents=True)
-    tex = gen_pos_vars(Path(fin).stem)
+    tex = gen_pos_vars(Path(fin).stem, profile)
     
     print(f'Writing to {fout}')
     save_tex(tex, fout)
